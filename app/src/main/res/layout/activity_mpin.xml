@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="350dp"
+    android:layout_height="800dp"
+    android:background="@drawable/background"
+    tools:context=".MPIN">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/back_icon" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/tab_1"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    app:backgroundTint="#aaaaaa"
+                    app:iconTint="#3F51B5" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/tab_2"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    app:backgroundTint="#AAAAAA" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/tab_3"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    app:backgroundTint="#38AACC" />
+
+                <Space
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Set your Mobile PIN"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Your MPIN is the password to your GigaGastos account. For your account security, never share your MPIN with anyone."
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Enter 4-digit MPIN"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_mpin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:hint="0000"
+                        android:inputType="number|numberPassword"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Avoid weak combinations like 1111, 1234, or your birthday"
+                        android:textColor="@color/greyishwhite"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Confirm 4-digit MPIN"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:fontFamily="sans-serif"
+                        android:hint="0000"
+                        android:inputType="number|numberPassword"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="By submitting this form, I agree to the Terms and Conditions and Privacy Policy of GigaGastos. I allow GigaGastos to collect and retain my personal data as prescribed by applicable law, rules, and regulations to create and maintain my GigaGastos account and avail of GigaGastos basic services. I also allow the use of my personal data for: (1) Sending notifications on GigaGastos routine maintenance activities, updates in Terms and Conditions, and new app versions; (2) Receive promotional communications on new GigaGastos products and service partnerships, discounts, and marketing surveys; (3) Process and analyze my personal data for statistical, analytical, and research purposes; (4) To share my personal data to affiliates / partners / service providers including respective Power Pay Plus partners as needed. Please visit out Help Center for question and concerns."
+                        android:textAlignment="center"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btn_next"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:enabled="false"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="PROCEED TO LOGIN"
+                        android:textColor="@color/greyishwhite"
+                        android:textColorLink="@color/black"
+                        android:textSize="20sp"
+                        app:backgroundTint="@color/disabled_button"
+                        app:backgroundTintMode="add"
+                        app:iconTint="@color/white"
+                        app:iconTintMode="add"
+                        app:rippleColor="@color/white" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
